@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor:url(http://bahia.ugr.es/~josemiaco2003/pe2/Imagenes/cursor_oficial.png), auto;
+}
+
+/****************************HEADER*******************************/
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,213,181,255);
+    color: black;
+    font-family: serif;
+}
+
+#logo {
+    order: 1;
+    width: 150px;
+}
+
+header h1 {
+    order: 2;
+    flex-grow: 0.5;
+    text-align: center;
+    font-size: 50px;
+}
+
+#formulario-inicio {
+    order: 3;
+    width: 150px;
+    font-size: 13px;
+    padding: 5px;
+    
+}
+
+#usuario {
+    width: 90%;
+}
+
+#contrasena {
+    width: 90%;
+}
+
+#enviar{
+    margin-top: 5px;
+}
+
+header h2{
+    font-size: 17px;
+}
+
+#altauser {
+    display: inline-block;
+    color: black;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 1%;
+    background-color: rgba(255, 0, 0, 0.633);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para el menú */
+    width: 100%;
+    padding: 10px 0; /* Agrega un relleno para espaciar los elementos */
+    box-sizing: border-box; /* Incluye el relleno en el ancho total */
+    font-size: 19px;
+    font-weight: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 2%;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/**************************MAIN*****************************************/
+main {
+    margin-top: 38.4px;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    column-gap: 10%;
+}
+
+.aside {
+    position: relative;
+    font-family: serif;
+    margin-left: 20px;
+    margin-top: 38.4px;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 111, 0, 0.29);
+    border-radius: 10px;
+}
+
+.aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.aside li {
+    width: 100%;
+}
+
+.enlace {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.tipo {
+    margin-top: 20%;
+}
+
+.aside h2 {
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+/*******************FOOTER***********************************************/
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    background-color: rgba(255, 111, 0, 0.29);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/****************PARA IMÁGENES**********************************************/
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    margin-top: 38.4px;
+    text-align: center;
+    column-gap: 180px;
+    row-gap: 20px;
+}
+
+.imagenes section{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 110%;
+    /*transition: transform .5s;*/
+}
+
+/*.imagenes section:hover{
+    transform: scale(1.1);
+}*/
+  
+.img {
+    width: 100%;
+    height: 130px;
+    margin-right: 20px;
+    margin: 0;
+    
+}
+
+.art1{
+    font-size: 10px;
+    width: 100%;
+    font-weight: bold;
+    background-color: rgba(255,213,181,255);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.art1 p {
+    margin: 0;
+    padding: 5px;
+    
+}
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+/**************FLECHA DERECHA**********************************************/
+
+#derecha {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#izquierda {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+#pass {
+    width: 90%;
+}
+
+/*********************************Nuevo para usuario**************************/
+#nuevo {
+
+    order: 3;
+    width: 150px;
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(173, 216, 230, 0.356);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: small; 
+}
+
+#logout {
+    width: 50%;
+    margin: 10px;
+    font-size: small;
+}
+
+#sesionUsuario {
+    margin: 0;
+    margin: 10px;
+}
+
+#enlaceObras {
+    text-decoration: none;
+}
+
+.ventanaEmergente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    max-height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.ventanaEmergente-content {
+    text-align: center;
+}
+
+/***************************RESPONSIVE*****************************/
+
+@media (width <= 480px) {
+
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo {
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    header h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+    }
+
+    #texto {
+        width: 90%;
+        font-size: 15px;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    #formulario-inicio {
+        order: 3;
+        width: 40%;
+        font-size: 13px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #enviar{
+        margin-top: 5px;
+    }
+    
+    header h2{
+        font-size: 17px;;
+    }
+    
+    #altauser {
+        color: black;
+        font-size: 15px;
+        padding: 1%;
+        background-color: rgba(255, 0, 0, 0.633);
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+    }
+
+    .aside{
+        order: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 35% 60% ;
+        width: 100%;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .aside ul {
+        grid-row: 2;
+    }
+
+    .aside h2 {
+        grid-row: 1;
+    }
+
+    .imagenes {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes section {
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    .tipo {
+        margin: 0;
+    }
+
+    #derecha {
+        width: 25px;
+        margin: 0;
+    }
+
+    #izquierda {
+        width: 25px;
+        margin: 0;
+    }
+
+}

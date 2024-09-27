@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor:url(http://bahia.ugr.es/~josemiaco2003/pe2/Imagenes/cursor_oficial.png), auto;
+}
+
+/****************************HEADER*******************************/
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,213,181,255);
+    color: black;
+    font-family: serif;
+}
+
+#logo {
+    order: 1;
+    width: 150px;
+}
+
+header h1 {
+    order: 2;
+    flex-grow: 0.5;
+    text-align: center;
+    font-size: 50px;
+}
+
+#formulario-inicio {
+    order: 3;
+    width: 150px;
+    font-size: 13px;
+    padding: 5px;
+    
+}
+
+#usuario {
+    width: 90%;
+}
+
+#contrasena {
+    width: 90%;
+}
+
+#enviar{
+    margin-top: 5px;
+}
+
+header h2{
+    font-size: 17px;
+}
+
+#altauser {
+    display: inline-block;
+    color: black;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 1%;
+    background-color: rgba(255, 0, 0, 0.633);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para el menú */
+    width: 100%;
+    padding: 10px 0; /* Agrega un relleno para espaciar los elementos */
+    box-sizing: border-box; /* Incluye el relleno en el ancho total */
+    font-size: 19px;
+    font-weight: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 2%;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*******************FOOTER***********************************************/
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    background-color: rgba(255, 111, 0, 0.29);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/******************MAIN*******************************/
+main {
+    padding-top: 50px;
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main section article {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 66%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 111, 0, 0.29);
+    border-radius: 10px;
+    height: 100%;
+    font-weight: bold;
+}
+
+main img {
+    width: 33%;
+}
+
+#anidada {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aside {
+    height: 100%;
+    font-family: serif;
+    width: 33%;
+    text-align: center;
+    background-color: rgba(255, 111, 0, 0.29);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.enlace {
+    text-decoration: none;
+    color: black;
+}
+
+#nuevo {
+
+    order: 3;
+    width: 150px;
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(173, 216, 230, 0.356);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: small; 
+}
+
+#logout {
+    width: 50%;
+    margin: 10px;
+    font-size: small;
+}
+
+#sesionUsuario {
+    margin: 0;
+    margin: 10px;
+}
+
+#anidada article {
+    overflow-wrap: break-word;
+}
+
+#pass {
+    width: 90%;
+}
+
+
+/************************************RESPONSIVE******************************/
+@media (width <= 480px) {
+
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo {
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    header h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+    }
+
+    #texto {
+        width: 90%;
+        font-size: 15px;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    #formulario-inicio {
+        order: 3;
+        width: 40%;
+        font-size: 13px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #enviar{
+        margin-top: 5px;
+    }
+    
+    header h2{
+        font-size: 17px;;
+    }
+    
+    #altauser {
+        color: black;
+        font-size: 15px;
+        padding: 1%;
+        background-color: rgba(255, 0, 0, 0.633);
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    main {
+        margin-top: 90px;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    #anidada {
+        flex-direction: column;
+    }
+
+    #anidada article {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #anidada aside {
+        width: 70%;
+        margin: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
